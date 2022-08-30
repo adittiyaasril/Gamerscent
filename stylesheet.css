@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.clear {
+  clear: left;
+}
+/* Header */
+.navbar {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+#header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.navbar-logo {
+  float: left;
+  width: 124px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.navbar-logo a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.navbar-item {
+  float: right;
+  margin-right: 50px;
+}
+.navbar a,
+.navbar-item a {
+  color: white;
+}
+.navbar-item a {
+  line-height: 65px;
+  padding: 0 25px;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+.navbar-item a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.title-image {
+  width: 30%;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+/* Image-Slider */
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000x;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* Download  */
+#download {
+  text-align: center;
+  padding-bottom: 110px;
+}
+
+.container-section {
+  padding: 7% 15%;
+}
+
+.download-heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.download-text {
+  line-height: 2;
+  margin: 40px auto 60px;
+}
+
+.download-btn {
+  background: black;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 22px;
+  margin: 5% 3% 5% 0;
+  color: #bfbebd;
+}
+.download-btn:hover {
+  color: white;
+}
+
+.btn-icon {
+  margin-right: 10px;
+}
+/*======= Content section =======*/
+#about {
+  background: #fa2fb5;
+  position: relative;
+  font-size: 1em;
+  padding: 30px 150px;
+  transition: 0.5s ease;
+  transition-property: padding;
+}
+.content h1 {
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: 600;
+}
+
+.content p {
+  color: #fff;
+  font-size: 1em;
+  margin: 30px 0;
+}
+
+/* Footer  */
+/* Footer Section */
+#footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  color: #bfbebd;
+}
+.social-icon:hover {
+  color: white;
+}
+/*======= Scroll bar =======*/
+::-webkit-scrollbar {
+  background: #fff;
+  width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #31087b;
+  width: 100%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #454f6d;
+}
+/* News */
+#news {
+  padding: 50px 0px 100px 0px;
+  background: #31087b;
+}
+#news h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 20px;
+  grid-gap: 40px;
+}
+.card {
+  background-color: #1c1b29;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+.container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.container:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+
+.details {
+  padding: 20px 10px;
+}
+.details > h3 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+.details > p {
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
